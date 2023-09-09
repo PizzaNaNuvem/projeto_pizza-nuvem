@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+header {
+    height: 10vh; /* Ajuste a altura conforme necessário */
+}
+
+main {
+    padding-top: 10vh; /* Ajuste o valor conforme necessário */
+}
+
 *{
-    margin:0;
+    margin:0px;
     padding:0;
     box-sizing: border-box;
     list-style: none;
@@ -12,7 +20,7 @@
 html{
     width:100vw;
     height:100vh;
-    font-size: 62.5%;
+    font-size: 75%;
     overflow-x: hidden;
 }
 
