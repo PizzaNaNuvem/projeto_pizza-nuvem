@@ -217,7 +217,6 @@ p {
 }
 
 .gallery-h1 {
-    margin: 1rem;
     background-color: #740005;
     color: whitesmoke;
     text-align: center;
@@ -233,8 +232,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-top: 5px;
+    margin-left: 240px;
+    margin-right: 240px;
     gap: 1vw;
     padding: 0 2vw;
     
@@ -258,3 +258,111 @@ p {
 .gallery-items:hover{
     transform: scale(1.1);
 }
+
+
+/*Contact*/
+
+.contactUS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eadac0;
+}
+
+.infobox{
+    margin-right: 50px;
+}
+.infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.infobox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background-color:#740005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.infobox div p{
+    color: #444801;
+    font-size: 1.1em;
+    font-weight: 1000;
+}
+.infobox div a{
+    color: #444801;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 1000;
+}
+
+/* Form */
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+.formulario .row50{
+    display: flex;
+    gap: 10px;
+    width: 113vh;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+    width: 50%;
+}
+
+.formulario .row100 .inputbox{
+    width: 100%;
+}
+
+.inputbox span{
+    color:#3f1503;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500 ;
+}
+
+.inputbox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #3f1503;
+}
+
+.inputbox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #3f1503;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputbox input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    background:#c32105;
+    color: whitesmoke;
+    font-size: 1.1em;
+    max-width: 200px;
+    font-weight: 1000;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputbox ::placeholder{
+    color: #999;
+}
+
+
+
