@@ -90,59 +90,62 @@ html {
     border-bottom: 4px solid #ffc506;
     color:#ffc506
 }
-
 .first-section {
-    height: 100vh;
-    background-image: linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8)),url(./img/fundo_pizza.jpg);
+    height: 100vh;    
+    background-image:url(img/fundo.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y:50px ;
+    background-position-y: 50px;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding-left: 150px; /* Adiciona um espaçamento à esquerda */
 }
 
-.first-section .conteudo-principal {        
-    display: flex;   
-    flex-direction: column;    
-    align-items: center;
-    justify-content:center;
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda verticalmente */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
 
-.first-section h1 {  
-    color:#ffc506;
-    font-size:6rem;
+.first-section h1 {
+    color: #ffc506;
+    font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
-.first-section h2 {  
-    color: rgb(177,177,177);
-    font-size:3rem;
+.first-section h2 {
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
     font-weight: 400;
-    text-transform:uppercase;
+    text-transform: uppercase;
     margin-bottom: 3rem;
 }
 
-.btn button {
-    width:230px;
-    height: 60px;
-    cursor:pointer;
-    text-transform:#ffc506 ;
-    border-radius:10px;
-    color:black;
-    font-weight: 700px;
-    margin-top: 5rem;
+
+.pizza-image {
+    margin-top: 80px; 
+    margin-right: 50px;
 }
 
-.btn button:hover {
-    background-color: #ffc506;
-    color: black;
-    border: 2px solid #ffc506;
-    transition: all 200ms ease-in;
+
+.botao-cardapio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA500; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.botao-cardapio:hover {
+    background-color: #FF6347; 
 }
 
 
