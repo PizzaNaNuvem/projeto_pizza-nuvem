@@ -88,11 +88,11 @@ html {
 .content .list-menu li a:hover {
     background-color: #3333;
     border-bottom: 4px solid #ffc506;
-    color:#ffc506
+    color:#ff0606
 }
 .first-section {
-    height: 100vh;    
-    background-image:url(img/fundo.jpg);
+    height: 100vh;
+    background-image: url('img/fundo.jpg'); /* Caminho relativo para a imagem na pasta "img" */    
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ html {
 }
 
 .first-section h2 {
-    color: rgb(177, 177, 177);
+    color: rgb(241, 234, 234);
     font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -367,6 +367,22 @@ p {
 .inputbox ::placeholder{
     color: #999;
 }
+  
 
+/* Estilos CSS no seu arquivo style.css */
+.about {
+    display: flex;
+    flex-direction: row; /* Alinha os elementos lado a lado */
+    background-color: #fffdfa;
+}
 
+.about-content {
+    flex: 1; /* A primeira coluna ocupa o espaço disponível */
+    padding: 90px; /* Adicione algum espaço interno para o texto */
+    margin-left: 250px;
+}
 
+.about-banner img {
+    max-width: 60%; /* Certifica-se de que a imagem não ultrapasse seu contêiner */    
+    margin-left: 150px;
+}
