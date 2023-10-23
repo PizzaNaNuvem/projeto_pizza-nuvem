@@ -62,4 +62,11 @@ const sections = [
   
   // Agende a troca de título e texto a cada 3 segundos.
   setInterval(changeSectionText, 3000);
-  
+ 
+
+// Formulario script
+ let formulario = document.getElementById("submit");
+
+  formulario.addEventListener("click", ()=> {
+    alert("Pizza na Nuvem agradece seu contato. Responderemos em breve no seu email.")
+ });
