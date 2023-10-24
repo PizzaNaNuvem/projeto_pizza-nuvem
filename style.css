@@ -574,9 +574,9 @@ main .formulario form{
     margin-bottom: 10px;
 }
 
-.inputbox input[type="submit"]{
+.inputbox button[type="submit"]{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background:#c32105;
     color: whitesmoke;
     font-size: 1.1em;

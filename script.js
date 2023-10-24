@@ -15,11 +15,11 @@ function changeImage() {
     currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
 }
 
-// Chame a função uma vez para iniciar a troca de imagens imediatamente
-changeImage();
+if (document.getElementById('pizza-image')) {
+    changeImage();
+    setInterval(changeImage, 3000);
+}
 
-// Define um intervalo para trocar a imagem a cada 3 segundos (3000 milissegundos)
-setInterval(changeImage, 3000);
 
 const thumbnails = document.querySelectorAll('.thumbnails li');
 const largeImage = document.getElementById('large-image');
@@ -38,6 +38,14 @@ const sections = [
     { title: "Nossas Pizzas", text: "Na Pizzaria da Nuvem, acreditamos que a autenticidade é essencial. Nossos pizzaiolos talentosos seguem receitas tradicionais italianas e têm um profundo conhecimento da arte de fazer pizza. Oferecemos uma ampla variedade de sabores e opções para atender a todos os gostos, desde as clássicas margheritas até combinações únicas de ingredientes. Seja você um amante de queijo, um devorador de carne, um vegetariano ou alguém que gosta de experimentar algo novo, temos uma pizza especial para você." },
     { title: "Ingredientes Frescos", text: "A qualidade dos ingredientes é o que nos diferencia. Trabalhamos em estreita colaboração com fornecedores locais para garantir que todos os ingredientes sejam frescos e da mais alta qualidade. Nossas massas são preparadas diariamente, e nossos molhos são feitos com tomates maduros e ervas frescas. Acreditamos que quando você usa os melhores ingredientes, o resultado final é uma pizza que encanta os sentidos." }
   ];
+
+    // Seletor para o botão de envio
+const submitBtn = document.getElementById("submitBtn");
+
+// Adicionar um ouvinte de evento para o clique no botão
+submitBtn.addEventListener("click", () => {
+    alert("Entraremos em contato em breve.");
+});
   
   const aboutSection = document.querySelector('.about');
   const sectionTitle = aboutSection.querySelector('.section-title');
@@ -59,14 +67,9 @@ const sections = [
   
   // Agende a troca de título e texto a cada 3 segundos.
   setInterval(changeSectionText, 3000);
+
+
  
-// Formulario script
- let formularioContato = document.getElementById("submit");
-
-formularioContato.addEventListener("click", ()=> {
-    alert("Pizza na Nuvem agradece seu contato. Responderemos em breve no seu email.")
- });
-
 // Menu mobile
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
