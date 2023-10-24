@@ -608,3 +608,20 @@ main .formulario form{
     max-width: 60%;    
     margin-left: 150px;
 }
+
+.divSobre{
+    display: flex;
+    justify-content: center;
+    background-color:#eadac0;
+   
+}
+.textoSobre {
+    width: 55vw;
+    color: black;
+    font-style: normal;
+    line-height: 1.5;
+    background-color: white;
+    padding: 2%;
+    border-radius: 5%;
+
+}
