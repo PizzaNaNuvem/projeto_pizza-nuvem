@@ -102,7 +102,7 @@ footer {
     padding-right: 1rem;
     padding-left: 1rem;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     transition: all 200ms ease-in;
 }
@@ -287,7 +287,6 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        /*justify-content: center;*/
     }
 
     main .formulario .row100 .inputbox{
@@ -301,6 +300,26 @@ footer {
 
     .open{
         display: block;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fffdfa;
+        }
+
+    .about .about-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    section .about-banner img {
+        max-width: 60%;    
+        margin-left: 10px;
     }
 
 }
@@ -317,16 +336,16 @@ footer {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    align-items: center; /* Alinha verticalmente ao centro */
-    padding-left: 150px; /* Adiciona um espaçamento à esquerda */
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 150px;
 }
 
 .first-section .conteudo-principal {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda verticalmente */
-    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .first-section h1 {
@@ -356,7 +375,6 @@ footer {
     padding: 10px 20px;
     background-color: #FFA500;
     color: black;
-    /*color: #fff;*/
     text-decoration: none; 
     border-radius: 5px; 
     transition: background-color 0.3s ease; 
@@ -570,4 +588,23 @@ main .formulario form{
 
 .inputbox ::placeholder{
     color: #999;
+}
+
+
+/* Sobre Nós Index*/
+.about {
+    display: flex;
+    flex-direction: row;
+    background-color: #fffdfa;
+}
+
+.about-content {
+    flex: 1;
+    padding: 90px;
+    margin-left: 250px;
+}
+
+.about-banner img {
+    max-width: 60%;    
+    margin-left: 150px;
 }
