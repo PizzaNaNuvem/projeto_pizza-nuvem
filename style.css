@@ -371,12 +371,26 @@ p {
 /* Sobre */
 
 .sobre{
+    height: 100vh;    
+    background-image:url(img/fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding-left: 150px; /* Adiciona um espaçamento à esquerda */
 }
 
-.first-section p{
+.sobre p{
+    display: flex;
+    color: #FFF;
+}
+
+.sobre h1{
     color: #FFF;
 }
 
