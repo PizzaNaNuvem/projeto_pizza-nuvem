@@ -368,5 +368,11 @@ p {
     color: #999;
 }
 
+/* Sobre */
 
+.sobre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
