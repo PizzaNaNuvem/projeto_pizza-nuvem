@@ -5,31 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Cardapio - Pizza na Nuvem</title>
 </head>
 
 <body>
     <header class="content">
-        <div class ="logo">
+        <div class="logo">
             <img src="img/logo.png" alt="">
-            <h3>PizzaNuvem</h3>
+            <h3>Pizzaria da Nuvem</h3>
         </div>
-        <nav>        
+        <nav>
             <ul class="list-menu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="sobre.html">Sobre nós</a></li>
-                 <li><a href="cardapio.html">Cardapio</a></li>
-                 <li><a href="galeria.html">Galeria</a></li>
-                 <li><a href="contato.html">Contato</a></li>            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Sobre Nós</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
-        </nav>       
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="icon/menu.png"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Sobre Nós</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
     </header>
     <br>
     <main>
         <div class="container-cardapio"><!--conteúdo da página-->
             <section><!--título-->
-                <h1 class="cardapio-h1">CARDÁPIO</h1>
+                <h1 class="title-h1">CARDÁPIO</h1>
             </section>
             <br>
             <div class="section-cardapio"><!--primeira seção-->
@@ -41,6 +54,8 @@
                     </a>
                     <p>Queijo, requeijão, gorgonzola, oregano e parmesão ralado.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 2-->
                     <a href="">
                         <img src="img/calabresa.jpg" alt="Calabresa">
@@ -49,6 +64,8 @@
                     </a>
                     <p>Queijo, calabresa e cebola, oregano.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 3-->
                     <a href="">
                         <img src="img/milho-bacon.jpg" alt="Milho e Bacon">
@@ -68,6 +85,8 @@
                     </a>
                     <p>Queijo, tomate, oregano e manjericão.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 5-->
                     <a href="">
                         <img src="img/pepperoni.jpg" alt="Pepperoni">
@@ -76,6 +95,8 @@
                     </a>
                     <p>Queijo, oregano e pepperoni.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 6-->
                     <a href="">
                         <img src="img/napolitana.jpg" alt="Napolitana">
@@ -95,6 +116,8 @@
                     </a>
                     <p>Frango desfiado, cebola, oregano e requeijão.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 8-->
                     <a href="">
                         <img src="img/ovo-bacon.jpg" alt="Ovo e Bacon">
@@ -103,6 +126,8 @@
                     </a>
                     <p>Queijo, bacon, cebola, cream cheese, oregano e ovo.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 9-->
                     <a href="">
                         <img src="img/portuguesa.jpg" alt="Portuguesa">
@@ -122,6 +147,8 @@
                     </a>
                     <p>Queijo, champignon, azeitona preta, cebola, oregano e pimentão verde.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 11-->
                     <a href="">
                         <img src="img/america.jpg" alt="Americana">
@@ -130,6 +157,8 @@
                     </a>
                     <p>Queijo, pepperoni, champignon, cebola, oregano e pimentão verde.</p>
                 </div>
+                <br>
+                <br>
                 <div class="imagem_prod"><!--pizza 12-->
                     <a href="">
                         <img src="img/la-bianca.jpg" alt="La Bianca">
@@ -145,5 +174,4 @@
         &copy; 2023 Pizza na Nuvem. Todos os direitos reservados.
     </footer>
 </body>
-
 </html>

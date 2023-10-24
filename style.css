@@ -1,7 +1,6 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');*/
+/* GERAL */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
-
 
 * {
     margin:0;
@@ -13,6 +12,7 @@
 }
 
 main {
+    min-height: 100vh;
     padding-top: 12vh;
     background-color: #eadac0;
 }
@@ -22,6 +22,30 @@ html {
     height:100vh;
     font-size: 75%;
     overflow-x: hidden;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.title-h1 {
+    background-color: #740005;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    width: 55vw;
+    height: 3rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: small;
+    background-color: grey;
 }
 
 
@@ -34,13 +58,11 @@ html {
     justify-content: space-around;
     align-items: center;
     background-color: #c32105;
-    position:fixed;
-    padding-left: 17rem;
-    padding-right: 17rem;   
+    position:fixed;  
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
     cursor : pointer;
     display: flex;
     align-items: center;
@@ -61,8 +83,8 @@ html {
 }
 
 .logo img {
-    width: 110px;
-    height: 100px;   
+    width: 100%;
+    height: 100%;   
 }
 
 .content .list-menu {
@@ -90,26 +112,240 @@ html {
     border-bottom: 4px solid #ffc506;
     color:#ffc506
 }
+
+
+/* Responsividade */
+
+@media only screen and (max-width: 950px) {
+
+    .content .list-menu li {
+        display: none;
+    }
+
+    .content .list-menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        background-color: #c32105;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu ul li {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu ul li a {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        color: white;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    .title-h1 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .logo {
+        width: 60px;
+        cursor : pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo h3 {
+        width: auto;
+        font-size: 1.1rem;
+    }
+
+    main .first-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5%;
+    }
+
+    main .first-section .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+
+    main .first-section h1 {
+        font-size: 1.5rem;
+    }
+
+    main .first-section h2 {
+        font-size: 1.5rem;
+        padding-top: 10%;
+    }
+
+    main .first-section .pizza-image {
+        width: 80%;
+        padding-bottom: 50%;
+    }
+
+    .container-cardapio .section-cardapio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .container-gallery {
+        display: none;
+    }
+
+    main .gallery-container{
+        width: 100vw;
+        display:flex;
+        align-items: center;
+        margin-left: 1px;
+        padding-left: 5px;
+        padding-bottom: 50px;
+    }
+    
+    main .gallery-container .gallery-items{
+        width: 100%;
+        border: 5px solid #FFF;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px #0006;
+        transition: transform .3s linear;
+    }
+    
+    main .gallery-container .gallery-items img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .contactUS{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #eadac0;
+        padding-left: 30px;
+        font-size: small;
+    }
+
+    .contactUS .infobox {
+        padding-left: 50px;
+    }
+
+    .map iframe {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+
+    main .formulario form {
+        width: 100vw;
+    }
+
+    main .formulario .row50{
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .formulario .row50 .inputbox{
+        width: 100%;
+    }
+
+    main .formulario .row100{
+        width: 75vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .formulario .row100 .inputbox{
+        width: 100%;
+    }
+
+    main .formulario .row100 .row100 .inputbox {
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .open{
+        display: block;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fffdfa;
+        }
+
+    .about .about-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    section .about-banner img {
+        max-width: 60%;    
+        margin-left: 10px;
+    }
+
+}
+
+
+/* HOME */
+
 .first-section {
     height: 100vh;    
     background-image:url(img/fundo.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50px;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    align-items: center; /* Alinha verticalmente ao centro */
-    padding-left: 150px; /* Adiciona um espaçamento à esquerda */
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 150px;
 }
 
 .first-section .conteudo-principal {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda verticalmente */
-    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .first-section h1 {
@@ -127,18 +363,18 @@ html {
     margin-bottom: 3rem;
 }
 
-
 .pizza-image {
+    width: 40%;
     margin-top: 80px; 
     margin-right: 50px;
 }
 
-
 .botao-cardapio {
+    font-size: 150%;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FFA500; 
-    color: #fff; 
+    background-color: #FFA500;
+    color: black;
     text-decoration: none; 
     border-radius: 5px; 
     transition: background-color 0.3s ease; 
@@ -147,7 +383,6 @@ html {
 .botao-cardapio:hover {
     background-color: #FF6347; 
 }
-
 
 
 /*CARDAPIO*/
@@ -159,23 +394,12 @@ html {
     background-color: #eadac0;
 }
 
-.cardapio-h1 {
-    background-color: #740005;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 2rem;
-    width: 113vh;
-    height: 3rem;
-    padding-top: 0.5rem;
-    border-radius: 5px;
-}
-
 .section-cardapio {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #eadac0;
-    width: 120vh;
+    width: 57vw;
     margin: 1rem;
 }
 
@@ -220,17 +444,6 @@ p {
     background-color: #eadac0;
 }
 
-.gallery-h1 {
-    background-color: #740005;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 2rem;
-    width: 113vh;
-    height: 3rem;
-    padding-top: 0.5rem;
-    border-radius: 5px;
-}
-
 .gallery-container{
     display:flex;
     flex-wrap: wrap;
@@ -243,6 +456,7 @@ p {
     padding: 0 2vw;
     
 }
+
 .gallery-items{
     width:  300px;
     height: 300px;
@@ -252,6 +466,7 @@ p {
     flex-grow: 1;
     transition: transform .3s linear;
 }
+
 .gallery-items img {
     width: 100%;
     height: 100%;
@@ -276,6 +491,7 @@ p {
 .infobox{
     margin-right: 50px;
 }
+
 .infobox div{
     display: flex;
     align-items: center;
@@ -301,6 +517,7 @@ p {
     font-size: 1.1em;
     font-weight: 1000;
 }
+
 .infobox div a{
     color: #444801;
     text-decoration: none;
@@ -308,26 +525,29 @@ p {
     font-weight: 1000;
 }
 
+
 /* Form */
 
-.formulario{
+main .formulario form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
+
 .formulario .row50{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 10px;
-    width: 113vh;
+    width: 50vw;
 }
+
 .inputbox{
     display: flex;
     flex-direction: column;
     margin-bottom: 2px;
-    width: 50%;
-}
-
-.formulario .row100 .inputbox{
-    width: 100%;
+    width: 50vw;
 }
 
 .inputbox span{
@@ -339,20 +559,21 @@ p {
 
 .inputbox input{
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     outline: none;
     border: 1px solid #3f1503;
 }
 
 .inputbox textarea{
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     outline: none;
     border: 1px solid #3f1503;
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
 }
+
 .inputbox input[type="submit"]{
     display: flex;
     justify-content: center;
@@ -364,37 +585,26 @@ p {
     cursor: pointer;
     padding: 14px 15px;
 }
+
 .inputbox ::placeholder{
     color: #999;
 }
 
-/* Sobre */
 
-.sobre{
-    height: 100vh;    
-    background-image:url(img/fundo.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 50px;
-    width: 100vw;
+/* Sobre Nós Index*/
+.about {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; /* Alinha o conteúdo à esquerda */
-    align-items: center; /* Alinha verticalmente ao centro */
-    padding-left: 150px; /* Adiciona um espaçamento à esquerda */
+    background-color: #fffdfa;
 }
 
-.sobre p{
-    display: flex;
-    color: #FFF;
+.about-content {
+    flex: 1;
+    padding: 90px;
+    margin-left: 250px;
 }
 
-.sobre h1{
-    color: #FFF;
+.about-banner img {
+    max-width: 60%;    
+    margin-left: 150px;
 }
-
-.sobre img{
-    border-radius: 50% ;
-}
-
