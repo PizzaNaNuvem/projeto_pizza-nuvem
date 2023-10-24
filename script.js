@@ -1,11 +1,5 @@
 // script.js
 
-let formularioContato = document.getElementById("submit")
-
-formularioContato.addEventListener("click", ()=> {
-  alert("Pizza na Nuvem agradece seu contato. Responderemos em breve no seu email.")
-});
-
 // Declaração das variáveis
 const imageUrls = [
     'img/pizza.webp',
@@ -66,6 +60,13 @@ const sections = [
   // Agende a troca de título e texto a cada 3 segundos.
   setInterval(changeSectionText, 3000);
  
+// Formulario script
+ let formularioContato = document.getElementById("submit");
+
+formularioContato.addEventListener("click", ()=> {
+    alert("Pizza na Nuvem agradece seu contato. Responderemos em breve no seu email.")
+ });
+
 // Menu mobile
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
