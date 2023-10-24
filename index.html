@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
-    <title>Pizzaria na Nuvem </title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Home - Pizzaria da Nuvem </title>
 </head>
+
 <body>
     <header class="content">
         <div class="logo">
             <img src="img/logo.png" alt="">
+            <h3>Pizzaria da Nuvem</h3>
         </div>
         <nav>
             <ul class="list-menu">
@@ -19,37 +23,56 @@
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
-        </nav>       
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="icon/menu.png"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
     </header>
 
-    <section class="first-section">
-        <div class="conteudo-principal">
-            <h1>Bem-vindos à Pizzaria Nuvem</h1>
-            <h2>Temperos diferentes para sabores diferentes</h2>   
-            <a href="cardapio.html" class="botao-cardapio">Conheça o nosso Cardápio</a>        
-        </div>
-        <img src="img/pizza.webp" alt="" class="pizza-image" id="pizza-image">      
-    </section> 
+    <main>
+        <section class="first-section">
+            <div class="conteudo-principal">
+                <h1>Bem-vindos à Pizzaria da Nuvem, </h1>
+                <h2>Temperos diferentes para sabores diferentes</h2>
+                <a href="cardapio.html" class="botao-cardapio">Conheça Nosso Cardápio</a>
+            </div>
 
-    <section class="about" id="about">
-        <div class="about-content section-content">
-            <p class="section-subtitle">Sobre Nós</p><br>
+            <img src="img/pizza.webp" class="pizza-image" id="pizza-image">
+        </section>
 
-            <h2 class="h3 section-title">História</h2><br>
-            <p class="section-text">
-                
-A Delícias da Pizza nasceu de uma paixão compartilhada por um grupo de amigos, que sempre acreditaram que uma boa pizza pode unir as pessoas e criar momentos memoráveis. Fundada em 2010, nossa pizzaria começou como um pequeno negócio familiar em um cantinho acolhedor da cidade, e desde então, temos trabalhado incansavelmente para criar pizzas que conquistam o coração dos nossos clientes.
-            </p>
-        </div>
-        <figure class="about-banner">
-            <img src="img/sobrenos.webp" alt="A man in an alice blue shirt with a thinking expression" class="w-100">
-        </figure>
-    </section>
-    
+        <section class="about" id="about">
+            <div class="about-content section-content">
+                <p class="section-subtitle">Sobre Nós</p><br>
+
+                <h2 class="h3 section-title">História</h2><br>
+                <p class="section-text">
+
+                    A Pizzaria da Nuvem nasceu de uma paixão compartilhada por um grupo de amigos desenvolvedores, que sempre
+                    acreditaram que uma boa pizza pode unir as pessoas e criar momentos memoráveis. Fundada em 2023,
+                    nossa pizzaria começou como um pequeno negócio familiar em um cantinho acolhedor da cidade, e desde
+                    então, temos trabalhado incansavelmente para criar pizzas que conquistam o coração dos nossos
+                    clientes.
+                </p>
+            </div>
+            <figure class="about-banner">
+                <img src="img/sobrenos.webp" alt="A man in an alice blue shirt with a thinking expression" class="w-100">
+            </figure>
+        </section>
+    </main>
+
     <footer>
-        &copy; 2023 Pizza na Nuvem. Todos os direitos reservados.
+        &copy; 2023 Pizzaria da Nuvem. Todos os direitos reservados.
     </footer>
-    
-    <script src="script.js"></script>
+
 </body>
+
 </html>
