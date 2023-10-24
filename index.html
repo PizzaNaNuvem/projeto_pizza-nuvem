@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Pizzaria na Nuvem </title>
+    <title>Home - Pizzaria da Nuvem </title>
 </head>
+
 <body>
     <header class="content">
-        <div class ="logo">
+        <div class="logo">
             <img src="img/logo.png" alt="">
-            <h3>PizzaNuvem</h3>
+            <h3>Pizzaria da Nuvem</h3>
         </div>
         <nav>
-                       
             <ul class="list-menu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="sobre.html">Sobre nós</a></li>
-                 <li><a href="cardapio.html">Cardapio</a></li>
-                 <li><a href="galeria.html">Galeria</a></li>
-                 <li><a href="contato.html">Contato</a></li>            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
-        </nav>       
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="icon/menu.png"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
     </header>
-    <section class="first-section">
-        <div class="conteudo-principal">
-            <h1>Pizza Nuvem </h1>
-            <h2>As melhores pizzas da região</h2>            
-            <div class="btn">
-                <button class ="reservar">Faça a sua reserva</button>
-                <button class="montar" >Montar a sua pizza</button>
+
+    <main>
+        <section class="first-section">
+            <div class="conteudo-principal">
+                <h1>Bem-vindos à Pizzaria da Nuvem, </h1>
+                <h2>Temperos diferentes para sabores diferentes</h2>
+                <a href="cardapio.html" class="botao-cardapio">Conheça Nosso Cardápio</a>
             </div>
 
+            <img src="img/pizza.webp" class="pizza-image">
+        </section>
+    </main>
 
-        </div>
-    </section>      
     <footer>
-        &copy; 2023 Pizza na Nuvem. Todos os direitos reservados.
+        &copy; 2023 Pizzaria da Nuvem. Todos os direitos reservados.
     </footer>
-        
+
 </body>
+
 </html>
