@@ -126,6 +126,15 @@ footer {
         display: none;
     }
 
+    .mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #c32105;
+        z-index: 5;
+    }
+
     .mobile-menu-icon {
         display: block;
     }
@@ -150,8 +159,8 @@ footer {
     }
 
     .mobile-menu ul li a {
-        padding-top: 3rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         padding-right: 1rem;
         padding-left: 1rem;
         color: white;
@@ -574,9 +583,9 @@ main .formulario form{
     margin-bottom: 10px;
 }
 
-.inputbox input[type="submit"]{
+.inputbox button[type="submit"]{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background:#c32105;
     color: whitesmoke;
     font-size: 1.1em;
@@ -607,4 +616,21 @@ main .formulario form{
 .about-banner img {
     max-width: 60%;    
     margin-left: 150px;
+}
+
+.divSobre{
+    display: flex;
+    justify-content: center;
+    background-color:#eadac0;
+   
+}
+.textoSobre {
+    width: 55vw;
+    color: black;
+    font-style: normal;
+    line-height: 1.5;
+    background-color: white;
+    padding: 2%;
+    border-radius: 5%;
+
 }
