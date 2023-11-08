@@ -126,15 +126,14 @@ footer {
         display: none;
     }
 
-    .mobile-menu {
+  {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background-color: #c32105;
         z-index: 5;
-    }
-
+  }
     .mobile-menu-icon {
         display: block;
     }
@@ -161,6 +160,7 @@ footer {
     .mobile-menu ul li a {
         padding-top: 1rem;
         padding-bottom: 1rem;
+
         padding-right: 1rem;
         padding-left: 1rem;
         color: white;

@@ -15,11 +15,11 @@ function changeImage() {
     currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
 }
 
-// Chame a função uma vez para iniciar a troca de imagens imediatamente
-changeImage();
+if (document.getElementById('pizza-image')) {
+    changeImage();
+    setInterval(changeImage, 3000);
+}
 
-// Define um intervalo para trocar a imagem a cada 3 segundos (3000 milissegundos)
-setInterval(changeImage, 3000);
 
 const thumbnails = document.querySelectorAll('.thumbnails li');
 const largeImage = document.getElementById('large-image');
@@ -38,7 +38,82 @@ const sections = [
     { title: "Nossas Pizzas", text: "Na Pizzaria da Nuvem, acreditamos que a autenticidade é essencial. Nossos pizzaiolos talentosos seguem receitas tradicionais italianas e têm um profundo conhecimento da arte de fazer pizza. Oferecemos uma ampla variedade de sabores e opções para atender a todos os gostos, desde as clássicas margheritas até combinações únicas de ingredientes. Seja você um amante de queijo, um devorador de carne, um vegetariano ou alguém que gosta de experimentar algo novo, temos uma pizza especial para você." },
     { title: "Ingredientes Frescos", text: "A qualidade dos ingredientes é o que nos diferencia. Trabalhamos em estreita colaboração com fornecedores locais para garantir que todos os ingredientes sejam frescos e da mais alta qualidade. Nossas massas são preparadas diariamente, e nossos molhos são feitos com tomates maduros e ervas frescas. Acreditamos que quando você usa os melhores ingredientes, o resultado final é uma pizza que encanta os sentidos." }
   ];
-  
+// == Validação FORM == 
+let inputCorreto = {
+    nomeCompleto: false,
+    email: false,
+    assunto: false,
+    telefone: false,
+    mensagem: false
+}
+
+// Validação - Nome
+const nomeCompleto = document.getElementById("nomeCompleto")
+nomeCompleto.addEventListener("change", (e) => {
+    let valorNome = e.target.value;
+    if (valorNome.trim() !== '') {
+        inputCorreto.nomeCompleto = true;
+    } else {
+        inputCorreto.nomeCompleto = false;
+        alert("Por favor, preencha o campo Nome Completo.");
+    }
+})
+
+// Validação - Email
+const email = document.getElementById("email")
+email.addEventListener("change", (e) => {
+    let valorEmail = e.target.value;
+    if (valorEmail.match(/^\S+@\S+\.\S+$/)) {
+        inputCorreto.email = true;
+    } else {
+        inputCorreto.email = false;
+        alert("Por favor, insira um endereço de e-mail válido.");
+    }
+})
+
+// Validação - Assunto
+const assunto = document.getElementById("assunto")
+assunto.addEventListener("change", (e) => {
+    let valorAssunto = e.target.value;
+    if (valorAssunto.trim() !== '') {
+        inputCorreto.assunto = true;
+    } else {
+        inputCorreto.assunto = false;
+        alert("Por favor, preencha o campo Assunto.");
+    }
+})
+
+// Validação - Telefone
+const telefone = document.getElementById("telefone")
+telefone.addEventListener("change", (e) => {
+    let valorTelefone = e.target.value;
+    if (valorTelefone.trim() !== '') {
+        inputCorreto.telefone = true;
+    } else {
+        inputCorreto.telefone = false;
+        alert("Por favor, preencha o campo Telefone.");
+    }
+})
+
+const mensagem = document.getElementById("mensagem")
+mensagem.addEventListener("change", (e) => {
+    let valorMsg = e.target.value;
+    if (valorMsg.trim() !== '') {
+        inputCorreto.mensagem = true;
+    } else {
+        inputCorreto.mensagem = false;
+        alert("Por favor, preencha o campo Mensagem.");
+    }
+})
+
+const submitBtn = document.getElementById("submitBtn");
+submitBtn.addEventListener("click", (e) => {
+    if (Object.values(inputCorreto).every(value => value)) {
+        alert("Email enviado, entraremos em contato em breve!");
+    } else {
+        e.preventDefault();
+    }
+})
   const aboutSection = document.querySelector('.about');
   const sectionTitle = aboutSection.querySelector('.section-title');
   const sectionText = aboutSection.querySelector('.section-text');
@@ -59,15 +134,9 @@ const sections = [
   
   // Agende a troca de título e texto a cada 3 segundos.
   setInterval(changeSectionText, 3000);
+
+
  
-
-// Formulario script
- let formulario = document.getElementById("submit");
-
-  formulario.addEventListener("click", ()=> {
-    alert("Pizza na Nuvem agradece seu contato. Responderemos em breve no seu email.")
- });
-
 // Menu mobile
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');

@@ -1,45 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Sobre Nós - Pizza na Nuvem</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contato - Pizzaria da Nuvem</title>
 </head>
 
 <body>
-  <header class="content">
-    <div class="logo">
-      <img src="img/logo.png" alt="">
-      <h3>Pizzaria da Nuvem</h3>
-    </div>
-    <nav>
-      <ul class="list-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre nós</a></li>
-        <li><a href="cardapio.html">Cardapio</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="content">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h3>Pizzaria da Nuvem</h3>
+        </div>
+        <nav>
+            <ul class="list-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html">Sobre Nós</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="icon/menu.png"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+    </header>
 
-  <div>
-    <div>
-      <h2>Sobre</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum culpa id nesciunt non tempora ex
-        architecto repellat rerum a sapiente similique, quo sequi quasi totam. Est debitis molestias voluptate?</p>
-    </div>
-    <div>
-      <h2>Equipe</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nemo quos animi, mollitia deserunt quasi dolor
-        quas consequuntur explicabo odit, repudiandae impedit ex natus enim blanditiis totam minus? Velit, tempori</p>
-    </div>
-  </div>
+    <main>
+        <div class="container-gallery">
+            <br>
+            <br>
+            <h1 class="title-h1">SOBRE NÓS</h1>
+            <br>
+        </div>
+        <div class="divSobre">
+          <p class="textoSobre">
+            Na Pizza na Nuvem, unimos a paixão pela pizza à tecnologia de computação em nuvem. Com um menu digital variado e entregas eficientes pela internet, garantimos que sua experiência seja saborosa e rápida. Nossa equipe combina mestria culinária com expertise em TI, para criar pizzas perfeitas com pedidos personalizados. 
+            <br>
+            <br>
+            Aproveite nossas promoções digitais e experimente uma pizza que faz a convergência entre o tradicional e o contemporâneo. Peça já e descubra o sabor inovador da Pizza na Nuvem.
+          </p>
+          </div>
+        <div class="container-gallery">
+            <br>
+            <h1 class="title-h1">NOSSA HISTÓRIA</h1>
+            <br>
+        </div>
+        <div class="divSobre">
+          <p class="textoSobre">
+            A jornada da Pizza na Nuvem é forjada pela dedicação dos mestres pizzaiolos Willian Brendo, Willian Ramos, Renan Santos e Leandro França. 
+            
+            <br>
+            <br>
+            Com décadas de experiência combinadas, esses visionários culinários trouxeram sabores excepcionais para o mundo digital.
 
-  <footer>
-    &copy; 2023 Pizza na Nuvem. Todos os direitos reservados.
-  </footer>
+Willian Brendo, o mestre do forno, aperfeiçoa a arte de assar pizzas até a perfeição, garantindo que cada pedaço saia quentinho e delicioso.
+
+Willian Ramos, o mago dos molhos, cria combinações que são verdadeiras sinfonias de sabor, fazendo com que nossos clientes anseiem pelo próximo pedaço.
+
+Renan Tavares, o inovador das coberturas, pensa fora da caixa e traz ingredientes surpreendentes que fazem nossas pizzas destacarem-se na multidão digital.
+
+Leandro França, o gênio da personalização, lidera nossa equipe de especialistas em TI e garante que cada pedido online seja tratado com a máxima precisão e agilidade.
+
+<br><br>
+
+Juntos, esses mestres da Pizza na Nuvem elevam a experiência da pizza a um novo patamar. Eles são a essência da nossa história e a garantia de que, não importa o que você escolha, terá uma pizza digna de aplausos digitais.
+          </p>
+        </div>
+        
+    </main>
+
+    <footer>
+        &copy; 2023 Pizzaria da Nuvem. Todos os direitos reservados.
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
