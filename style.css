@@ -126,14 +126,15 @@ footer {
         display: none;
     }
 
-  {
+    .mobile-menu {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background-color: #c32105;
         z-index: 5;
-  }
+    }
+    
     .mobile-menu-icon {
         display: block;
     }
